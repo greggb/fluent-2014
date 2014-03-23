@@ -1,0 +1,54 @@
+#Static Types are Overrated: The Dynamic Duo - Loose Types and Object Extension
+##Eric Elliott
+
+###Static types are good for catching errors - supposedly
+    * catch type errors
+    * Overrated
+    * More and more big companies writing big apps in JS
+    * type correctness does not correct program correctness
+    * You should be doing automated testing no matter what
+    * JS tools are underrated
+        * JSHint
+        * Tern.js
+    *JS has great runtime debugging
+        *trace.gl
+    * Chrome debugging tools
+        * Dominator tool to view Garbage collected object
+        ** Google this ^^^^^ **
+
+###how
+    * Keep modules small and modular
+    * test the surface API of every module (Unit tests)
+
+    * Aim for complete code coverage
+        * write tests first
+        * Never write code that does not satisfy a code assertion
+    * Test the whole system as a single unit
+        * integration tests
+    * Reduce cognitive load
+        * docs - jsdoc (docblockr)
+        * tern will parse your jsdocs for type errors
+
+### well maintained js
+    * simple modules
+    * linted
+    * unit tested
+    * reviewed
+    * integratino tested
+    * removes need for statically typed
+
+### KIll your crew before you sail - (google this talk)
+
+    * static types reinvent dynamic features (poorly)
+
+### Generic functions work on any type
+    * map, foreach
+    * transforms
+    * filters
+    * reduction
+    *lifting
+        * making a type specific function work with other types
+
+    * Dynamic object extension
+        * The heart and soul of prototypal OO
+

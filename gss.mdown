@@ -1,0 +1,20 @@
+#GSS - Layouts Not Possible Even with Tomorrow's CSS Using Polyfills from the Future
+##Dan Tocchini (The Grid)
+
+### What is gss
+    * replaces layout agent
+    * resolves cyclic dependencies
+    * layout on the web is ridiculous
+    * Source order independance
+
+### constraint programming
+    * Describe what you want to do
+        * Do this and require it's this size
+        * do that and I'd like it to be over here
+        * Do this and weakly set the size
+    * math does the *how*
+
+    ###VFL
+        * visual layout
+        * GSS webifies VFL
+

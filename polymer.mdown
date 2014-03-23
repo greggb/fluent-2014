@@ -1,0 +1,62 @@
+#Polymer Web Compnents in Action
+##Eric Bidelman - @ebidel
+
+###What is Polymer
+     * Bring back html elements
+     * Extensible
+     * 4 main specs - templates, custom elemsnts, shadow dom, html imports
+        * diferent support in browsers
+    * Layers of polymer
+        * Native - current browser landscape
+        * Platform - polyfills for component standards
+        * Core - opiniated way to work with components
+        * Elements - resuable custom elements
+    * USe elements without writing code
+    * Everything is an element
+        * tags
+        * non visual elements
+            * flex layout (makes the app use flex box without css)
+            * polymer xhr - does ajax behind the scenes
+
+###Working with Polymer
+    * Declarative registration
+        <polymer-element name="my-element" noscript>
+        <template>
+            Markup
+        </template>
+        <script>
+            Polymer("hello-element"), {
+                sayHello: function (){};
+            }
+        </script>
+        <script src="something.js"></script>
+        </polymer-element>
+        <my-element></my-element>
+
+    * Data binding
+        * {{templating}}
+        * Reads properties from inside the component
+
+    * Published properties
+        * add attr to element to over-ride props
+        * Attributes = name
+            *name = whatever
+            <element name="somethignelse">
+
+    * Declarative event handlers
+        * on-click in your template
+            * button on-clikc="{{some function}}"
+
+    * Automatic name finding
+        * IDs inside element are encapsilated
+        * this.$.<ID> = reference ID inside shadow dom
+
+###Features
+    * Platform layer is polyfills for polymer
+        * all modern browsers
+    * Mutation Observers
+    * pointer events - touch for free
+    * web animations
+    * Bower install polymer platform
+    * As browsers build features removed from polyfill layer to increase perf
+    * polymerproject.org

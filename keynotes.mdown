@@ -1,0 +1,121 @@
+#Brendan Eich
+    * es6 fill gaps in the langauge
+    * es5 started as ES3.1
+    * Pages should be using "async" rather than script.
+    * Script hasn't changed since implemented - now "module"
+        * async, strict, isolated
+        * cached modules
+        * like an upgrade on <script>
+        * What he would've done
+    * ES7 being built in parallel with 6
+        * object.observe
+        * SIMD intrinsics
+            * Single intruction multiple data
+            * parallel math
+            * low level
+            * In Dart coming to JS so dart can compile to something in js
+            * four fold increase in intense math
+            * Game inside Game inside Game
+        * Value Objects
+            * more bits!
+            * vectors, float32, int 64, decimal, rational, complex
+            * truth OR falsy object
+            * Literal ssyntax - sensible units: decimal(0) -> 0m
+            * create your own suffix unit.L = int64;
+            * operator syntax matters - precision!
+            * Decimals matter!
+        * Nearly native performance
+    * Non plugin hi-res games all in js
+    * Oculus Rift VR - the 90s done right
+    * Extensible web manifesto (Extensible web manifesto.org)
+    *Always bet on JS
+
+#Pamela Fox
+    * Khan Academy
+    * "What would the world loook like if every student learned JS in grade school?"
+    * "What is the earliest age you can learn js?"
+    * 330k started beginner js challenge - 51k gave age
+        * 70% - 86% completion rate from age 8-26
+        * why lower for younger students?
+            * Typing skills
+            * patience
+            * X and Y spatial reasoning (processingJS)
+        * 13 Year olds 82% completion
+        * first logic challenge
+            * Much bigger disparity
+            * 57% - 73%
+            * Much more spatial reasoning required
+        * Conclusion - majority of 13 year olds can learn JS
+    * In HS students could use JS in other areas
+
+# Scott Hanselman
+## js, vm, and the cloud
+    * The cloud - building a sytem of virtual machines
+    * Infrastructure as a service
+    * Can install linux on Azure - for some reason
+    * Platform as a service - having a party in a hotel room - don't have to clean up your own mess
+    * SSD reliability? "I don't care I'm RENTING them" - chief architext of netflix
+    * JS is an operating system
+
+# Lea Verou
+## border-radius
+    * always proportional to box size
+    * using a slash (260px / 210px) for ellipse
+    * percentages based on width and height - don't need slash
+        * adding back the slash amkes a flexible ellipse
+        * Quarter ellipse with full values separated by slash - 100% 0 0 0 / 100% 0 0 0
+    * shape-inside: content box
+        * fit content inside your radius
+    * Scripting radius value
+        * Most browsers return input value or ems -> px
+        * FF will show scaled value
+    *Border-corner-Shape
+        * future property for creating almost all shapes
+        * Can emulate using gradients
+            * linear gradients with angles - 135deg, transparent 40px, black 0)
+            * linear gradients with angles - circle at 0 0, transparent 40px, black 0)
+
+# Ilya Grigorik
+## performance and perception
+    * latency, rendering, parsing, js, css, selector macting, painting
+        * Engagement is what matter - no matter speed
+    * book - high performance browser networking
+    * perceived speed
+        * 0-100ms = instant
+        * 100-300ms = slight delay percevived
+        * 300ms-1000ms = huge delay, task focus affected
+        * 1s+ = context switch
+        * 10s = come back later
+    * 16ms = 60 fps - silky smooth fps
+    * 24 fps minimum stutter free fps
+    * perceived perf = function(expected perf, UX, actual perf)
+        * UX is the glue
+    *Who's responsible for perf UX?
+        * designer, dev, interaction designer?
+        * Yes. Everyone.
+    * HN site - techincally it's fast.
+        * 500ms render
+        * expereience sucks
+        * fast load, but have to pinch and zoom to read anything
+        * takes 5s+ to accomplish task
+    * What is user's *TASK* performance time
+        * What are the primary tasks? (it's no onLoad())
+        * What is the expected time to complete those tasks?
+    * Blogger
+        * sign up was so fast that users expected it to take longer
+        * user's want their commitment to take time
+        * people thought it was broken
+        * add a meaningless spinner? user satisfaction up
+    * Users have question and want answers
+        * Don't know about indexing or data cubes
+        * lack of feedback = performance sucks
+        * Sometimes response fast and sometimes slow - user's don't understand why
+        * fixes:
+            * validation on the quesiton
+            * set expectation on load time (this will process x nuner of items)
+            * early and progressive feedback
+    * experience = function(perceieved perf, task completion)
+    * Ask
+        * What is user trying to achieve
+        * What are the tech perf constraints?
+        * How do you connect these two things with your UX?

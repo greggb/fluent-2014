@@ -1,0 +1,57 @@
+#Inside JavaScript Execution
+##Chase Douglas
+
+### When should I worry about optimizations?
+    * hot code - executed alot
+
+###object specs
+    * objs are stored as hashmap (*bad perf*)
+        * propname (always a string in JS)
+        * hash function to find index in array of properties
+    * Array Objects
+        * Stored linearly in memory
+        * Sparse array Object
+            * my obj = []
+            * myobj[1000000] = "someString"
+            * Tons of memory....
+            * JS runtimes recognize this
+                * converted into a hashmap (better for memory, but performance hit!)
+        * Combined!
+            * Object contains array and hashmap
+            * do you need to optimize this code?
+                * Classes!
+###Classes
+    function MyClass(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    var myObj = new MyClass(5, "string");
+    * Classes are stored in specific locations
+    * adding a new property that wasn't an argument
+        * Now it's a special Class
+
+
+###function optimizations
+    * runtime will optimize multiple calls to the same method
+        * until you pass in a different type and it de-opts
+    * Always send the same types to functions - monomorphic
+        * includes adding ad-hox props to a class
+
+###primitives
+    * stored directly in memory
+        * Not a pointer
+    * in js - strings, booleans, numbers (sometimes)
+    * boxing primitives
+        * primitive -> object
+        * var a ="string"
+        * a.x = 5 (STRING treated as object)
+        * watch your primitives - don't box them and you'll increase perf.
+    * JS Numbers are double-precision floating point values
+        * require 53 bits
+        * Can fit numbers and pointers side by side
+        * Nan Boxing
+    * Chrome
+        * Crankshaft
+        * doesn't box - performance enhancements on all types
+
+

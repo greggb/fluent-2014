@@ -1,0 +1,16 @@
+#JavaScript as a First-Class Citizen on iOS 7
+##Kevin Whinnery (Twilio)
+
+    * Can create a new app in xcode with javascriptcore
+        * linked frameworks and libraries
+        * Write js with jscontext
+        * objects -> jsValue
+        * add js as NSString
+            * NSString *code = @"function(){}";
+    * NodeJS Toolchain
+        * browserify
+
+
+
+###javascriptcore
+    * framework headers - lots of info

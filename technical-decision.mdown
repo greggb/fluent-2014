@@ -1,0 +1,20 @@
+#Unpacking Technical Decisions
+##Sarah Mei (Ministry of Velocity)
+###learning
+    * Repetition
+        * changing over time to see what changes the outcome
+#Decision pyramid
+    * less freuent need to choose -------> more frequent
+    * languages
+    * frameworks
+    * libraries
+    * good code practices
+
+    * High risk low frequency
+    * low risk high frequency
+    * How do you evaluate your library?
+        1) Some technical data (interface)
+        2) *mostly* social data (activity)
+            * commit frequency, age, SO, comments
+        3) Popularity
+        4) Reading code/tests (familiarity)

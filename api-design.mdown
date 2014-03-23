@@ -1,0 +1,51 @@
+#Design Strategies for JavaScript API
+##Ariya Hidayat (Shape Security)
+    * nobody reads API docs
+    * code is written once, read many times
+    * using static polymorphism
+    * prevent dangerous convenience
+    * Avoid unreadble code - confusing semantics
+    * Read code outloud
+
+### examples
+    * Boolean trap
+        * using a boolean when you only have two choices
+        * what does each value ACTUALLY mean
+        * new slider(true) / new slider (false) ??
+            * new slider ({
+                orientation: "horizontal"
+            })
+    * boolean modifier trap
+        * resize(135, 130, true) ??
+    * ambiguity begets insanity
+
+    * double negatives
+        * bad
+            * disabled = false
+            * setHidden = true
+        * good
+            * enabled = true
+            * set visible = false
+
+    * non-verbal actions
+        * message can be verb or noun
+        * use showmessage or goforward
+
+    * avoid conversational style
+        * minimum and maximum rather than yearfrom and yearto
+        *this.callme = adam should be this.name = "adam"
+        * from and to should be departure and arrival
+
+    * explicit immutability
+        * string.trim() vs string.trimmed() - tense indicates changed variable
+
+###Best practices
+    * private mathods by default
+    * public by justification
+        * write 3 examples which use the API FIRST
+        * Fail first two attempts anyway
+    * mandatory API review
+    * API Tools
+        * Use your tools
+        * syntax parser
+        * blacklist function names (setDisabled(false))

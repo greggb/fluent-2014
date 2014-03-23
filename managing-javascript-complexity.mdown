@@ -1,0 +1,51 @@
+#Managing JavaScript Complexity in Teams
+##Jarrod Overson
+###JS
+    * inflated expectations
+    * Dynamic languages are messy
+        * similar but vastly different ecosystems
+    * Talent pool is frustrating - JQUERY
+    * Progress is staggering
+        * Everyone has an opinion
+        * Can't use all the cool new stuff - yet
+    * refactoring is hard
+        * can't just jump into a file and fix it
+        * intertwining code prevents modularizing callback hell
+    * The web is hard
+        * Web apps - not solved
+        * solutions still don't exist
+        * web giants still pivoting and backtracking
+
+### So why be a Web Platform Engineer?
+    * Javascript Won.
+        * most web developers *are* javascript developers or will be soon
+
+### How?
+    * Agree on coding style
+        * line length
+        * spacing
+        * Everything
+    * Document your code
+        * Treat docs as code
+        * easy to read and update and discuss and find
+        * GIT
+    * Tools to automate your style
+        * Warnings are errors
+        * make it hard to be wrong
+    * Use the community for guidance
+        * there are clear style winners
+
+    * Find a lint configuration for the code you *want* to exist, not code that *already* exists.
+
+    * Visualize your code - platojs.org
+        * See what files can be easily refactored
+
+    * The unexamined code is not worth releasing.
+
+    * Code is not just logic. Code is an API.
+
+    * Web is not just a cheap alternative to native apps
+
+    * Embrace js as *your* platform
+
+    * Automate and visualize *Everything*

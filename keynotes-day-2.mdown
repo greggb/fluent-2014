@@ -1,0 +1,66 @@
+#Paul Irish
+    * expecations for page load are too low
+    * what is the fastest we can get?
+    * Speed index
+        * User perception
+        * Pixels on the screen
+        * High is bad, low is good
+        * Best correlation to load time
+    * Measuring in KB or requests is like measuring your diet by the pound or number of things you ate
+    * Not all requests are made equal
+
+###components of an http request
+    * DNS Lookup etc
+    * make request
+    * Download data
+    * bandwidth vs latnecy
+        * latency improves page load linearly
+        * TCP
+            * Hand Shake
+            * TCP Slow-start (congestion control)
+                * request increasing amount of packets: 6k, 12k, 23k, 46k (at around 220ms, 700ms for mobile)
+            * 85KB in 1200ms!
+            * Every TCP connection!
+            * Bursty
+            * Not bandwidth limited!
+            * waiting on the network
+
+###The critical path
+    * User cliicking a link and seeing what they want to see
+    * Web page test - page speed insights
+        * Film strip view!
+            * Maps network to page view
+        * timeline
+    * Critical CSS
+        * send at the top of the page (inline it)
+        * non-critical css comes separately
+    * eliminate render blocking js
+    * minimize render blocking css
+        * avoid inlinging large data uris
+    * User content in the inital HTML
+        * No redirects for the html!
+        * gzip
+###goals
+    * fast mobile page load (under 1s)
+    * above the fold content in first 14HB
+    * max of 200 MS server response
+    * 60fps
+    * speed index under 1000
+
+#Jen Simmons
+    * HTML is great
+
+#Beyond Pushing "Play": Interactive, Data-driven Videos for a Web-based World
+##Susan E. McGregor (Columbia University)
+    * video tells stories other formats can't
+        * Johnny cash project
+    * Interactive video?
+        * Arcade Fire music video
+        * Mozilla popcorn maker
+    * Video layering
+        * controls layered over content layered over video
+
+#The Goodness of JavaScript
+##Aaron Frost (Domo), Dave Geddes (Domo)
+    * Yay JS
+    * Be Nice

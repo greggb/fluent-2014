@@ -1,0 +1,20 @@
+#Introduction to ExpressJS
+##Guy Ellis (GoDaddy)
+
+###Express
+    * Node MVC Framework
+        * run "express AppName"
+            *bootstraps
+    * Nodemon - watcher - restarts server on change
+    * Public folder is public.
+        * Static files just appear
+    * order in which you declare things important
+        * App.use can over-ride other routes
+    * res.send -> text/html
+        * send an object -> application/json
+        * pass in request parameters to access url
+            * req.params
+        * access query params
+            *req.query
+
+    * res.render -> get a view and render with passed in data

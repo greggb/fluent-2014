@@ -1,0 +1,57 @@
+#Frames Per Second
+##Paul Bakaus (Google)
+    * movies - 24fps
+        * Economic reasons (tape costs)
+    * Persistance of vision
+        * opitcal illusion
+        * perceieve mostion when viewing objects in rapid succession
+    * image persists after being viewed for 1/25th of a second
+    * 10 fps absolute minimum
+    * <15 fps stutter, headaches
+    * 24 fps tolerable, cost effieicent
+    * >= 30 fps - decent
+    * 48 fps HFR - good, not enough
+    * 60 fps - sweet spot
+    * 67 fps - does not imrpove picture any further
+        * brain's maxed out.
+    * People didn't like the Hobbit
+        * TV framerate
+        * higher, better, not trained to see this as a movie.
+
+### Hz vs FPS
+    * refresh rate
+        * number fo time the image is fully redrawn/refreshed
+        * can be important or not depeneding on display type and frame rate
+    * Refresh removes motion blur
+        * black space between frames
+        * enables seaprating images from each other
+    * LCDS
+        * no black phase
+        * refresh rates - mostly marketing
+    * plasma
+        * mix between crt and lcd
+
+ ### Jitter is what happens when an animation is played at a variable frame rate rather than a fixed frame rate
+    * the web is missing motion blur
+        * Why not add it?
+            * expensive
+            * Capture 4 times the amount of video
+
+###sweet spot - 60fps
+    * fast enough to not induce motion blur
+    * works with most refresh rates
+    * minimizes flicker
+    * Set a baseline
+    * you have 16ms but it is shared with the browser
+    * use requestanimationframe (API)
+        * Matches refresh rate of your display
+        * syncs with vsync
+    * google runtime performance checklist
+        * best practive
+
+###Measuring is hard
+    * dev tools
+
+###common bottlenecks
+    * probably not js
+    * rendering

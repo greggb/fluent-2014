@@ -1,0 +1,47 @@
+#In Pursuit of the Holy Grail: Building Isomorphic JavaScript Apps
+##Spike Brehm
+    * JS on client and server
+
+###2 types
+    * Environment agnostic - primitive types
+        * Doesn't depend on the browser or document
+            * handlebars - a string compiled to a function
+
+    * Shimmed for environment - library to expose the same API in both environments
+        * window.location.pathname
+            * serverside = req.path
+        * Superagent
+
+###Use cases
+    * Templating
+        * gateway
+        * using same template on client and server
+    * routing
+        * routes in rails and your backbone app
+    * internationalization
+    * Date & Currency formatting
+    * model validation
+    * API interactions
+
+
+    * most libraries are already isomorphic
+        * jquery
+        * underscore
+        * backbone
+        * moment - date time formatting
+        * React
+        * polyglot - intl
+
+###Why
+    * initial pageload speed
+    * SEO - crawlable apps
+    * maintainability
+    * flexibility - run anywhere
+
+###How
+    * build process
+        * browserify
+            * use require
+        * grunt
+
+

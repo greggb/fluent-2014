@@ -1,0 +1,24 @@
+#The Secrets of React's Virtual DOM
+##Pete Hunt (Facebook / Instagram)
+
+###What makes UI difficult to build?
+    * "Just doesn;t feel right"!
+    * Human verified
+    * Lots of state
+    * Tooling mismatch
+###Try to be predictable - reliable
+    * Data Binding
+        * syncs state with your UI
+        * polyfill for reactive js.dom
+        * leaky
+        * Not simple
+        * Observables - listened to
+            * computed properties change based on the observable
+
+###Reactive JS
+    * JS is not reactive.
+    * lots of state in the dom
+    * Build a virtual dom
+    * Views are smaller than models
+        * Orders of growth
+

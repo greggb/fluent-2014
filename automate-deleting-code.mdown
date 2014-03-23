@@ -1,0 +1,46 @@
+#Everything is a Polyfill: Automate Deleting Code for Front End Performance
+##Rachel Myers (GitHub), Emily Nakashima (GitHub)
+##bit.ly/almost-everything
+
+    *Polyfills are the adaptor pattern for the web
+
+###Sunset tests
+    * write tests so you come back to the code
+        * fail this test if this AB test still exists in 2 months...
+        * fail this test if this TODO hasn't been done in 2 months...
+        * Fail this test if we dropped a browser and don't need a vendor prefix any longer
+    * Dom Monster
+    * Can't test for everything
+
+###Polyfills
+    * haml
+    * coffeescript
+    * Core part of apps
+    * What about when they're no longer needed?
+        * browser support changes
+###Deleting polyfills
+    * Docs
+    * Comment - "delet when we drop support for IE8"
+        * Probably never going to open this file.
+    * Modernizr
+        * will load only necessary polyfills with yep/nope
+    * RequireJS
+        * dependencies are a list of string IDs
+
+###Perf
+    * Polyfills take time to load
+    * dynamic loaing solutions won't be preloaded by browsers
+    * Overhead
+    * Minimize number of HTTP requests
+
+###Automating it
+    * figure out your browser support
+        * figure out support length
+        * Note the polyfills for these browsers
+    * Add tests when you add a browser hack
+    * Polymer
+
+###Http/2 - SPDY
+    * No longer a disadvantage to make multiple http requests
+
+###Know what browsers you support

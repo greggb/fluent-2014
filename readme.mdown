@@ -1,0 +1,26 @@
+#Fluent Conf 2014
+http://fluentconf.com/fluent2014/public/schedule/grid/2014-03-12?schedule=public
+
+_Some Notes are better than others._
+
+##Reasons for insufficient summaries:
+    * Talk was so amazing I just wanted to listen
+    * Talk was so amazing it couldn't be condensed to bullet points
+    * Not enough coffee
+
+##Summaries Included:
+    * Design Strategies for JavaScript API
+    * Everything is a Polyfill: Automate Deleting Code for Front End Performance
+    * Frames Per Second
+    * GSS - Layouts Not Possible Even with Tomorrow's CSS Using Polyfills from the Future
+    * Introduction to ExpressJS
+    * JavaScript as a First-Class Citizen on iOS 7
+    * In Pursuit of the Holy Grail: Building Isomorphic JavaScript Apps
+    * Inside JavaScript Execution
+    * Keynote - Day One
+    * Keynote - Day Two
+    * Static Types are Overrated: The Dynamic Duo - Loose Types and Object Extension
+    * Managing JavaScript Complexity in Teams
+    * Polymer Web Compnents in Action
+    * The Secrets of React's Virtual DOM
+    * Unpacking Technical Decisions
